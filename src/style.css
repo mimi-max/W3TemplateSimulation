@@ -12,7 +12,7 @@ body,html{
     opacity: 1;
     position: fixed;
     width: 300px;
-    background-color: lawngreen;
+    background-color: #fff;
     height: 100vh;
     z-index: 10;
     top:0;
@@ -20,7 +20,7 @@ body,html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #000;
+    color: #757575
 }
 .sidebar__logo-menu{
     padding-bottom: 64px;
@@ -52,7 +52,7 @@ body,html{
     width: 100%;
     /*background-color: #fff;*/
     font-size: 24px;
-    background-color:rgb(43, 40, 40);
+    background-color:#fff;
     padding: 15px;
     z-index: -1;
     padding: 16px;
@@ -74,4 +74,14 @@ body,html{
 
 .navigation__logo{
     padding: 8px 16px;
+}
+/**/
+.container__images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container__img{
+    width: 100%;
+    vertical-align: top;
 }
