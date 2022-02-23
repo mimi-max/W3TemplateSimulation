@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3 CSS Template</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
+
 <body>
-    <header class="navigation-Container">
-        <h1 class="navigation__logo"></h1>
-        <div class="navigation__icon">
-            <p class="navigation__logo-menu"></p>
-            <nav class="navigation__links">
-                <ul class="navigation__links-list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="main-container">
+    <div class="sidebar">
+        <div class="sidebar__logo-menu">SOME <br> NAME</div>
+        <nav class="sidebar__links">
+            <ul class="sidebar__links-list">
+                <li class="sidebar__links-item">CLOSE</li>
+                <li class="sidebar__links-item">PORTFOLIO</li>
+                <li class="sidebar__links-item">ABOUT ME</li>
+                <li class="sidebar__links-item">CONTACT</li>
+            </ul>
+        </nav>
     </div>
     
+    
+    <div class="main-container">
+        <header class="navigation">
+            <div class="navigation__logo">SOME NAME</div>
+            <button class="navigation__button"><i class="fas fa-bars"></i></button>
+        </header>
+    </div>
+    <script src="index.js"></script>
+
 </body>
+
 </html>
