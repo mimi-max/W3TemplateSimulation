@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3 CSS Template</title>
+    <title>Flex Images Grid</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -18,7 +18,7 @@
         <div class="sidebar__logo-menu">SOME <br> NAME</div>
         <nav class="sidebar__links">
             <ul class="sidebar__links-list">
-                <li class="sidebar__links-item">CLOSE</li>
+                <li class="sidebar__links-item sidebar-hidden"><a class="sidebar__link-close" href="#">CLOSE</a></li>
                 <li class="sidebar__links-item">PORTFOLIO</li>
                 <li class="sidebar__links-item">ABOUT ME</li>
                 <li class="sidebar__links-item">CONTACT</li>
@@ -26,28 +26,21 @@
         </nav>
     </div>
 
-
     <div class="main-container">
         <header class="navigation">
             <div class="navigation__logo">SOME NAME</div>
             <button class="navigation__button"><i class="fas fa-bars"></i></button>
         </header>
-        <div class="container__images">
-            <div>
-                <div><img class="container__img" src="./images/natureboy.jpeg" alt=""></div>
-                <div><img class="container__img" src="./images/girl_mountain.jpeg" alt=""></div>
-                <div><img class="container__img" src="./images/girl.jpeg" alt=""></div>
-            </div>
-            <div>
-                <div><img class="container__img" src="./images/boy.jpeg" alt=""></div>
-                <div><img class="container__img" src="./images/man_bench.jpeg" alt=""></div>
-                <div><img class="container__img" src="./images/natureboy.jpeg" alt=""></div>
-            </div>
-            <div>
-                <div> <img class="container__img" src="./images/girl_train.jpeg" alt=""></div>
-                <div> <img class="container__img" src="./images/closegirllast.jpeg" alt=""></div>
-                <div> <img class="container__img" src="./images/girllast.jpeg" alt=""></div>
-            </div>
+        <div class="images">
+                <div  class="images__content"><img class="images__img" src="./images/natureboy.jpeg" alt="" ></div>
+                <div class="images__content" ><img class="images__img" src="./images/girl_mountain.jpeg" alt=""></div>
+                <div class="images__content" ><img class="images__img" src="./images/girl.jpeg" alt=""></div>
+                <div class="images__content" ><img class="images__img" src="./images/boy.jpeg" alt=""></div>
+                <div class="images__content"><img class="images__img" src="./images/man_bench.jpeg" alt=""></div>
+                <div class="images__content"><img class="images__img" src="./images/natureboy.jpeg" alt=""></div>
+                <div class="images__content"> <img class="images__img" src="./images/girl_train.jpeg" alt=""></div>
+                <div class="images__content"> <img class="images__img" src="./images/closegirllast.jpeg" alt=""></div>
+                <div class="images__content"> <img class="images__img" src="./images/girllast.jpeg" alt=""></div>
         </div>
         <nav class="container__links">
             <a class="link" href="#"><i class="fa-solid fa-angles-left"></i></a>

@@ -1,9 +1,25 @@
-let menuToggle = document.querySelector(".navigation__button");
-let menu =document.querySelector(".sidebar");
+let menu = document.querySelector(".sidebar");
+let close = document.querySelector('.sidebar__link-close');
+let btn = document.querySelector('.navigation__button')
 
-function showMenu (e){
-    console.log(e)
-    menu.classList.toggle("sidebar--show");
 
+function openMenu(ev) {
+    console.log("ttt")
+    menu.classList.add('sidebar--show')
+    ev.stopPropagation()
+    document.querySelector(".main-container").addEventListener('click',closeMenu);
+    btn.removeEventListener('click', openMenu);
+    
 }
-document.querySelector(".main-container").addEventListener('click',showMenu)
+
+ btn.addEventListener('click', openMenu);
+
+
+function closeMenu(e){
+    console.log("gg")
+    menu.classList.remove('sidebar--show')
+    document.querySelector(".main-container").removeEventListener('click',closeMenu);
+    btn.addEventListener('click', openMenu);
+    
+}
+close.addEventListener('click',closeMenu);

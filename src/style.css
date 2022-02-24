@@ -30,8 +30,12 @@ body, html {
     padding-top: 64px;
     margin: 10px 0;
     font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
 }
-
+.sidebar__links{
+    width: 100%;
+}
 .sidebar__links-list {
     margin: 0;
     padding: 0;
@@ -42,9 +46,18 @@ body, html {
     text-align: center;
     padding: 8px 16px;
     font-size: 15px;
-
+    line-height: 22px;
 }
-
+.sidebar__links-item:hover{
+    color:#000; 
+    background: rgb(204,204,204);
+    font-weight: bold;
+    
+}
+.sidebar__link-close{
+ text-decoration: none;
+ color: #757575;
+}
 
 .sidebar--show {
     left: 0;
@@ -82,15 +95,18 @@ body, html {
 }
 
 /**/
-.container__images {
+.images {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.container__img {
+.images__img {
     width: 100%;
     vertical-align: top;
+}
+.images__content{
+    width: 100%;
 }
 
 /**/
@@ -127,9 +143,13 @@ nav.container__links a:hover{
 /*part media queries tablet*/
 
 @media screen and (min-width:600px) {
-    .container__images {
-        flex-wrap: nowrap;
-    }
+    
+.images__content{
+    /* display: none; */
+    width: calc( 100% / 3 );
+}
+
+    
 }
 @media screen and (min-width: 1224px){
     .navigation{
@@ -138,7 +158,16 @@ nav.container__links a:hover{
     .sidebar{
         left: 0;
     }
-    .container__images{
+    .main-container{
         margin-left: 300px;
     }
+    .images{
+        
+        width: 100%;
+    }
+    .sidebar-hidden{
+        display: none;
+    }
+    
+    
 }
