@@ -4,6 +4,13 @@ body, html {
     margin: 0;
     font-family: "Raleway", sans-serif;
 }
+HTML{
+    background-color: #f1f1f1;
+}
+body{
+    max-width: 1600px;
+    margin: auto;
+}
 
 * {
     box-sizing: inherit;
@@ -156,7 +163,7 @@ nav.container__links a:hover{
         display: none;
     }
     .sidebar{
-        left: 0;
+        left: unset;
     }
     .main-container{
         margin-left: 300px;
